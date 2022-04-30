@@ -96,6 +96,8 @@ def cs():
     c = 0
     cheng = 0
     while a > 0:
+        if a == 129:
+            continue
         d = webdriver.Chrome(chrome_options=chrome_options, executable_path=chromedriver)
         # d = webdriver.Chrome()
         d.implicitly_wait(5)
@@ -103,6 +105,7 @@ def cs():
         c += 1
         cheng += qd(d)
         a -= 1
+        
         d.close()
 
     print('成功', cheng)
