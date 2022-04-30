@@ -93,7 +93,7 @@ def qd(d):
 
 def cs():
     a = max_a
-    c = 105
+    c = 0
     cheng = 0
     while a > 0:
         if c == 104:
