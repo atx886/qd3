@@ -93,10 +93,11 @@ def qd(d):
 
 def cs():
     a = max_a
-    c = 0
+    c = 105
     cheng = 0
     while a > 0:
         if a == 129:
+            a += 1
             continue
         d = webdriver.Chrome(chrome_options=chrome_options, executable_path=chromedriver)
         # d = webdriver.Chrome()
