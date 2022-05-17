@@ -107,8 +107,10 @@ def cs():
         c += 1
         cheng += qd(d)
         a -= 1
-        
         d.close()
+        if c % 2 == 0:
+            time.sleep(300)
+        
 
     print('成功', cheng)
     print('shib', 128 - cheng)
